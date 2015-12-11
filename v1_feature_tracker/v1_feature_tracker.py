@@ -9,9 +9,10 @@ import argparse;
 
 __author__ = "jones"
 __date__ = "$24-Nov-2015 14:13:55$"
+__version__ = "0.1.0"
 
-if __name__ == "__main__":
-    
+#if __name__ == "__main__
+def main():
     parser = argparse.ArgumentParser(description='App to track features in an export Excel file for the current PI');
     parser.add_argument('user', help="V1 user name");
     parser.add_argument('password', help="V1 password");
