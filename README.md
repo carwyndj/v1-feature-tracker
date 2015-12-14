@@ -11,6 +11,7 @@ Installation
 
 Usage
 -----
+```
 v1_feature_tracker-script.py [-h] [-filename FILENAME] [-art ART] user password team [team ...]
 
 positional arguments:
@@ -22,3 +23,4 @@ optional arguments:
   -h, --help          show this help message and exit
   -filename FILENAME  Excel file name to create (default is 'v1_features.xlsx')
   -art ART            The V1 base planning level e.g. Secure Player (ART) (default is 'Secure Player (ART)')
+```
