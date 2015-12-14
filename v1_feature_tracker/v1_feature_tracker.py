@@ -18,7 +18,7 @@ def main():
     parser.add_argument('password', help="V1 password");
     parser.add_argument('-filename', help="Excel file name to create (default is \'v1_features.xlsx\')", default="v1_features.xlsx");
     parser.add_argument('-art', help="The V1 base planning level e.g. Secure Player (ART) (default is \'Secure Player (ART)\')", default="Secure Player (ART)");
-    parser.add_argument('teams', metavar='team', nargs='+', help="The V1 team to track the features for. (default is \'MS_NMP_Android\')");
+    parser.add_argument('teams', metavar='team', nargs='+', help="The V1 team to track the features for.");
     args = parser.parse_args();
   
     print "--------------------------------------"
