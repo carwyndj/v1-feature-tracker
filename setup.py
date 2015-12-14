@@ -2,7 +2,7 @@
  
  
 import re
-from setuptools import setup
+from setuptools import setup, find_packages
  
  
 version = re.search(
@@ -12,13 +12,15 @@ version = re.search(
     ).group(1)
  
  
-with open("README.rst", "rb") as f:
+with open("README.md", "rb") as f:
     long_descr = f.read().decode("utf-8")
  
  
 setup(
     name = "v1_feature_tracker",
     packages = ["v1_feature_tracker"],
+    install_requires = ['v1pysdk-unofficial',
+                        'xlsxwriter'],
     entry_points = {
         "console_scripts": ['v1_feature_tracker = v1_feature_tracker.v1_feature_tracker:main']
         },
